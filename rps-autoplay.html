@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>RockPaperScissors</title>
+      <link rel="stylesheet" href="Styles/rps-autoplay.css">
+    </head>
+
+    <body>
+
+      <p class ="title">Rock Paper Scissors</p>
+
+      <button 
+        onclick="playGame('rock')"
+        class="move-button">
+        <img src="images/rock-emoji.png" 
+          class="move-icon">
+      </button>
+
+      <button 
+        onclick="playGame('paper')"
+        class="move-button">
+        <img src="images/paper-emoji.png"
+          class = "move-icon">
+      </button>
+
+      <button 
+        onclick="playGame('scissors')"
+        class="move-button">
+        <img src="images/scissors-emoji.png"
+          class = "move-icon">
+      </button>
+      
+      <p class="js-result result"></p>
+      <p class="js-moves moves"></p> 
+      <p class="js-score score"></p>
+
+      <button 
+      onclick="resetScore();"
+      class = "reset-score-button"
+      >Reset score
+      </button>
+
+      <button
+      onclick ="autoPlay();"
+      class ="auto-dash-play-button"
+      >Auto Play</button>
+
+      <script src="Scripts/rps-autoplay.js"></script>
+    </body>
+  </html>

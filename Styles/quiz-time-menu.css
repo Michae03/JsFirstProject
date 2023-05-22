@@ -28,14 +28,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-option-container {
+.menu-option-container,
+.rps-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.play-button {
+.play-button,
+.rps-button {
   border: none;
   font-size: 20px;
   font-family: sans-serif;
@@ -49,6 +50,12 @@ body {
   transform: translateX(0);
 }
 
-.play-button:hover {
+.rps-button {
+  padding: 15px 25px;
+  font-size: 16px;
+}
+
+.play-button:hover,
+.rps-button:hover {
   transform: translateY(-0.5rem);
 }
