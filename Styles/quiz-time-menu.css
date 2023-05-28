@@ -23,7 +23,7 @@ body {
 
 .title-letter:hover {
   transform: translateY(-1rem);
-  background: linear-gradient(to bottom,#ffffff 40%, #eeb3e8);
+  background: linear-gradient(to bottom,#ffffff 70%, #7d7d7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -46,7 +46,8 @@ body {
   padding: 15px 80px;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.4s,
+    box-shadow 0.4s;
   transform: translateX(0);
 }
 
@@ -58,4 +59,10 @@ body {
 .play-button:hover,
 .rps-button:hover {
   transform: translateY(-0.5rem);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.play-button:active,
+.rps-button:active {
+  opacity: 0.1;
 }

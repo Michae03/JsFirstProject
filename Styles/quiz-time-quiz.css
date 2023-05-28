@@ -97,6 +97,12 @@ body {
 .green-button:hover {
   background: linear-gradient(to bottom, rgb(10, 145, 10) 20%, rgb(7, 124, 7));
 }
+.red-button:active,
+.blue-button:active,
+.yellow-button:active,
+.green-button:active {
+  opacity: 0.8;
+} 
 
 .bottom-gui-container {
   display: grid;
